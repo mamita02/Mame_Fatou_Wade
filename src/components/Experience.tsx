@@ -1,5 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import portrait from "@/assets/portrait-mfw.jpg";
+import soutenance from "@/assets/mfw-soutenance.jpg";
+
+const photos = [
+  { src: portrait, caption: "Portrait studio" },
+  { src: soutenance, caption: "Soutenance — Master IA & Big Data" },
+];
 
 const items = [
   {
@@ -56,9 +62,18 @@ const items = [
 
 export function Experience() {
   const [active, setActive] = useState(0);
+  const [photoIdx, setPhotoIdx] = useState(0);
   const tilt = useRef<HTMLDivElement>(null);
   const sectionRef = useRef<HTMLElement>(null);
   const [parallax, setParallax] = useState(0);
+
+  // Auto-rotate the photo carousel
+  useEffect(() => {
+    const id = setInterval(() => {
+      setPhotoIdx((p) => (p + 1) % photos.length);
+    }, 5000);
+    return () => clearInterval(id);
+  }, []);
 
   // 3D tilt on portrait card
   useEffect(() => {
@@ -99,7 +114,11 @@ export function Experience() {
     <section
       id="experience"
       ref={sectionRef}
-      className="relative overflow-hidden bg-background py-24 lg:py-32"
+      className="relative overflow-hidden py-24 lg:py-32"
+      style={{
+        backgroundImage:
+          "linear-gradient(180deg, var(--background) 0%, color-mix(in oklab, var(--primary) 18%, var(--background)) 50%, var(--background) 100%)",
+      }}
     >
       {/* Decorative parallax orbs (subtle, not heavy brown) */}
       <div
@@ -153,17 +172,42 @@ export function Experience() {
                 <div className="absolute -inset-6 rounded-[2.5rem] bg-gradient-warm opacity-30 blur-3xl" />
                 <div className="absolute -inset-2 rounded-[2rem] bg-gradient-to-br from-accent/40 via-transparent to-primary/30 blur-xl" />
 
-                {/* Portrait frame */}
+                {/* Portrait frame — carousel */}
                 <div className="relative overflow-hidden rounded-[2rem] border border-border bg-card shadow-deep">
-                  <img
-                    src={portrait}
-                    alt="Portrait de Mame Fatou Wade"
-                    width={800}
-                    height={1000}
-                    loading="lazy"
-                    className="h-[520px] w-full object-cover"
-                  />
+                  <div className="relative h-[520px] w-full">
+                    {photos.map((p, i) => (
+                      <img
+                        key={p.src}
+                        src={p.src}
+                        alt={`Mame Fatou Wade — ${p.caption}`}
+                        width={800}
+                        height={1000}
+                        loading="lazy"
+                        className={`absolute inset-0 h-full w-full object-cover transition-all duration-1000 ease-out ${
+                          i === photoIdx ? "opacity-100 scale-100" : "opacity-0 scale-105"
+                        }`}
+                      />
+                    ))}
+                  </div>
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent" />
+
+                  {/* Carousel controls */}
+                  <div
+                    className="absolute bottom-24 right-4 flex items-center gap-1.5"
+                    style={{ transform: "translateZ(60px)" }}
+                  >
+                    {photos.map((_, i) => (
+                      <button
+                        key={i}
+                        type="button"
+                        onClick={() => setPhotoIdx(i)}
+                        aria-label={`Photo ${i + 1}`}
+                        className={`h-1.5 rounded-full transition-all ${
+                          i === photoIdx ? "w-8 bg-accent" : "w-3 bg-primary-foreground/50 hover:bg-primary-foreground/80"
+                        }`}
+                      />
+                    ))}
+                  </div>
 
                   {/* Floating year badge — 3D layer */}
                   <div
