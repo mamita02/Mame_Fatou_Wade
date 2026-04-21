@@ -1,4 +1,4 @@
-import portrait from "@/assets/portrait-mfw.jpg";
+import portrait from "@/assets/hero-coder.jpg";
 
 export function Hero() {
   return (
