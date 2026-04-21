@@ -365,6 +365,93 @@ export function Experience() {
             </ol>
           </div>
         </div>
+
+        {/* Langues & Loisirs — fills the gap before certifications */}
+        <div className="mt-24 grid gap-6 lg:grid-cols-12 lg:gap-8">
+          {/* Langues */}
+          <div className="lg:col-span-5 relative overflow-hidden rounded-3xl border border-border bg-card p-8 lg:p-10">
+            <div className="absolute -top-16 -right-16 h-48 w-48 rounded-full bg-accent/15 blur-3xl" />
+            <div className="relative">
+              <p className="text-xs uppercase tracking-[0.3em] text-accent">Langues</p>
+              <h3 className="mt-3 font-display text-3xl text-primary lg:text-4xl">
+                Bilingue, à l'aise partout.
+              </h3>
+
+              <ul className="mt-8 space-y-5">
+                {[
+                  { name: "Français", level: "Langue maternelle", value: 100 },
+                  { name: "Anglais", level: "Professionnel — C1", value: 85 },
+                  { name: "Wolof", level: "Langue maternelle", value: 100 },
+                ].map((l) => (
+                  <li key={l.name}>
+                    <div className="flex items-baseline justify-between">
+                      <p className="font-display text-xl text-primary">{l.name}</p>
+                      <p className="text-[10px] uppercase tracking-widest text-muted-foreground">
+                        {l.level}
+                      </p>
+                    </div>
+                    <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-secondary">
+                      <div
+                        className="h-full rounded-full bg-gradient-warm transition-all duration-700"
+                        style={{ width: `${l.value}%` }}
+                      />
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          {/* Loisirs */}
+          <div className="lg:col-span-7 relative overflow-hidden rounded-3xl border border-border p-8 lg:p-10"
+            style={{
+              backgroundImage:
+                "linear-gradient(135deg, color-mix(in oklab, var(--primary) 12%, var(--card)) 0%, var(--card) 60%)",
+            }}
+          >
+            <div className="absolute -bottom-20 -left-20 h-56 w-56 rounded-full bg-primary/10 blur-3xl" />
+            <div className="relative">
+              <div className="flex items-end justify-between gap-4">
+                <div>
+                  <p className="text-xs uppercase tracking-[0.3em] text-accent">Loisirs & passions</p>
+                  <h3 className="mt-3 font-display text-3xl text-primary lg:text-4xl">
+                    Au-delà de l'écran.
+                  </h3>
+                </div>
+                <span className="hidden sm:block font-display text-6xl italic text-accent/40 leading-none">
+                  &amp;
+                </span>
+              </div>
+
+              <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3">
+                {[
+                  { label: "Code", icon: "</>" },
+                  { label: "Cuisine", icon: "🍲" },
+                  { label: "Recherche", icon: "🔬" },
+                  { label: "Commerce", icon: "🛍" },
+                  { label: "Création de contenu", icon: "🎬" },
+                  { label: "Lecture", icon: "📖" },
+                ].map((h) => (
+                  <div
+                    key={h.label}
+                    className="group relative overflow-hidden rounded-2xl border border-border bg-background/60 px-4 py-5 transition-all hover:-translate-y-1 hover:border-accent/40 hover:shadow-soft"
+                  >
+                    <span className="text-2xl">{h.icon}</span>
+                    <p className="mt-2 font-display text-lg text-primary leading-tight">
+                      {h.label}
+                    </p>
+                    <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-warm transition-all duration-500 group-hover:w-full" />
+                  </div>
+                ))}
+              </div>
+
+              <p className="mt-8 max-w-xl text-sm text-muted-foreground leading-relaxed">
+                Curieuse de nature, je partage aussi mes coulisses de dev et mes recettes
+                sur les réseaux — un équilibre entre rigueur technique et créativité.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
