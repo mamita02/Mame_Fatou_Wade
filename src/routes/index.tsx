@@ -1,26 +1,45 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Navbar } from "@/components/Navbar";
+import { Hero } from "@/components/Hero";
+import { Marquee } from "@/components/Marquee";
+import { About } from "@/components/About";
+import { Skills } from "@/components/Skills";
+import { Work } from "@/components/Work";
+import { Experience } from "@/components/Experience";
+import { Contact } from "@/components/Contact";
 
 export const Route = createFileRoute("/")({
   component: Index,
+  head: () => ({
+    meta: [
+      { title: "Mame Fatou Wade — Ingénieure IA & Développeuse Web" },
+      {
+        name: "description",
+        content:
+          "Portfolio de Mame Fatou Wade, ingénieure en Intelligence Artificielle & Big Data et développeuse full-stack basée à Dakar. Réalisations e-commerce, CRM et plateformes IA.",
+      },
+      { property: "og:title", content: "Mame Fatou Wade — Portfolio" },
+      {
+        property: "og:description",
+        content:
+          "Ingénieure IA & développeuse full-stack. Découvrez mes projets : Tima Love, PCNet Univers, MCE Pro CRM, Fly Valet, Marimika, Afroduct.",
+      },
+      { property: "og:type", content: "website" },
+    ],
+  }),
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
 function Index() {
-  return <PlaceholderIndex />;
+  return (
+    <main className="min-h-screen bg-background">
+      <Navbar />
+      <Hero />
+      <Marquee />
+      <About />
+      <Skills />
+      <Work />
+      <Experience />
+      <Contact />
+    </main>
+  );
 }
