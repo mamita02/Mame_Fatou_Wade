@@ -1,4 +1,4 @@
-import portrait from "@/assets/hero-portrait.jpg";
+import portrait from "@/assets/portrait-mfw.jpg";
 
 export function Hero() {
   return (
@@ -35,10 +35,14 @@ export function Hero() {
               <span className="transition-transform group-hover:translate-x-1">→</span>
             </a>
             <a
-              href="#contact"
-              className="inline-flex items-center gap-2 rounded-full border border-primary/30 px-7 py-3.5 text-sm font-medium text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
+              href="/CV_Mame_Fatou_Wade.pdf"
+              download
+              className="group inline-flex items-center gap-2 rounded-full border border-primary/30 bg-card/60 px-7 py-3.5 text-sm font-medium text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
             >
-              Me contacter
+              <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3" />
+              </svg>
+              Télécharger mon CV
             </a>
           </div>
 

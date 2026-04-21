@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 
 const links = [
   { href: "#about", label: "À propos" },
-  { href: "#skills", label: "Expertise" },
   { href: "#work", label: "Réalisations" },
   { href: "#experience", label: "Parcours" },
+  { href: "#certifications", label: "Diplômes" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -48,10 +48,14 @@ export function Navbar() {
         </ul>
 
         <a
-          href="#contact"
-          className="hidden rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground shadow-soft transition-transform hover:-translate-y-0.5 md:inline-block"
+          href="/CV_Mame_Fatou_Wade.pdf"
+          download
+          className="hidden items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground shadow-soft transition-transform hover:-translate-y-0.5 md:inline-flex"
         >
-          Travaillons ensemble
+          <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3" />
+          </svg>
+          Mon CV
         </a>
       </nav>
     </header>
