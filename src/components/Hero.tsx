@@ -11,8 +11,8 @@ export function Hero() {
       <div className="absolute -top-24 -right-24 h-96 w-96 rounded-full bg-accent/15 blur-3xl" />
       <div className="absolute -bottom-32 -left-24 h-[28rem] w-[28rem] rounded-full bg-primary/10 blur-3xl" />
 
-      <div className="relative mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-12 lg:gap-16 lg:px-12">
-        <div className="lg:col-span-7 flex flex-col justify-center">
+      <div className="relative mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-12 lg:gap-8 lg:px-12">
+        <div className="lg:col-span-6 flex flex-col justify-center">
           <span className="inline-flex w-fit items-center gap-2 rounded-full border border-border bg-card/60 px-4 py-1.5 text-xs uppercase tracking-[0.2em] text-muted-foreground">
             <span className="h-1.5 w-1.5 rounded-full bg-accent" />
             Disponible pour collaborations
@@ -65,37 +65,37 @@ export function Hero() {
         </div>
 
         {/* RIGHT — 3 avatars 3D, no box, no text */}
-        <div className="relative lg:col-span-5">
-          <div className="relative mx-auto flex h-[30rem] w-full items-end justify-between lg:h-[34rem]">
+        <div className="relative lg:col-span-6 lg:-ml-12">
+          <div className="relative mx-auto flex h-[34rem] w-full items-end justify-between lg:h-[40rem]">
             {/* Soft warm halo behind */}
             <div className="pointer-events-none absolute inset-x-0 bottom-8 -z-10 h-2/3 rounded-[3rem] bg-gradient-warm opacity-70 blur-3xl" />
 
-            {/* Left avatar — smaller, pushed to far left */}
+            {/* Left avatar */}
             <img
               src={charLeft}
               alt="Avatar 3D — vue de gauche"
               width={768}
               height={1024}
-              className="relative h-[15rem] w-auto shrink-0 object-contain drop-shadow-[0_25px_25px_rgba(60,30,15,0.3)] animate-float lg:h-[17rem]"
+              className="relative h-[18rem] w-auto shrink-0 object-contain drop-shadow-[0_25px_25px_rgba(60,30,15,0.3)] animate-float lg:h-[22rem]"
               style={{ animationDelay: "0s" }}
             />
 
-            {/* Center avatar — biggest, lifted */}
+            {/* Center avatar — biggest */}
             <img
               src={charFront}
               alt="Avatar 3D — vue de face, tenant une sphère IA"
               width={768}
               height={1024}
-              className="relative z-10 -mx-6 h-[28rem] w-auto shrink-0 object-contain drop-shadow-[0_35px_40px_rgba(60,30,15,0.45)] lg:h-[32rem]"
+              className="relative z-10 -mx-4 h-[32rem] w-auto shrink-0 object-contain drop-shadow-[0_35px_40px_rgba(60,30,15,0.45)] lg:h-[38rem]"
             />
 
-            {/* Right avatar — smaller, pushed to far right */}
+            {/* Right avatar */}
             <img
               src={charRight}
               alt="Avatar 3D — vue de droite, codant"
               width={768}
               height={1024}
-              className="relative h-[15rem] w-auto shrink-0 object-contain drop-shadow-[0_25px_25px_rgba(60,30,15,0.3)] animate-float lg:h-[17rem]"
+              className="relative h-[18rem] w-auto shrink-0 object-contain drop-shadow-[0_25px_25px_rgba(60,30,15,0.3)] animate-float lg:h-[22rem]"
               style={{ animationDelay: "1.5s" }}
             />
           </div>
