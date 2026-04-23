@@ -19,26 +19,6 @@ const items = [
     stack: ["Python", "Odoo", "React", "n8n"],
   },
   {
-    year: "2025",
-    period: "Projet phare",
-    role: "Co-fondatrice & Dev IA/Web",
-    company: "Saytu — Assemblée Nationale",
-    tag: "Civic Tech · IA",
-    description:
-      "Observatoire numérique des finances publiques avec connexion SIGFIP/ASTER et IA pour la détection d'anomalies. 38 ministères, 6 842 Mds FCFA.",
-    stack: ["FastAPI", "PostgreSQL", "ML"],
-  },
-  {
-    year: "2025",
-    period: "Hackathon",
-    role: "Développeuse — Govathon",
-    company: "Projet Emergia VR",
-    tag: "VR · Formation",
-    description:
-      "Plateforme de formation en réalité virtuelle pour les premiers intervenants en médecine d'urgence. Prototype + pitch institutionnel.",
-    stack: ["Unity", "C#", "Figma"],
-  },
-  {
     year: "2024",
     period: "Stage recherche",
     role: "Stagiaire IA & Big Data",
