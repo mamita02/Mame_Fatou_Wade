@@ -1,4 +1,4 @@
-import portrait from "@/assets/hero-coder.jpg";
+import portrait from "@/assets/hero-3d-ai.jpg";
 
 export function Hero() {
   return (
@@ -68,9 +68,9 @@ export function Hero() {
             <div className="relative overflow-hidden rounded-[2rem] shadow-deep">
               <img
                 src={portrait}
-                alt="Portrait de Mame Fatou Wade, ingénieure IA et développeuse"
+                alt="Illustration 3D d'une ingénieure IA voilée interagissant avec des interfaces d'intelligence artificielle"
                 width={1024}
-                height={1280}
+                height={1024}
                 className="h-full w-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-transparent" />
