@@ -64,33 +64,15 @@ export function MediaContent() {
           </div>
           <div className="lg:col-span-4">
             <p className="text-muted-foreground leading-relaxed">
-              Au-delà du code, je raconte des histoires en image et en voix —
-              entre coulisses de dev, démos produit et créations personnelles.
+              Trois projets clients montés et narrés de A à Z — voix off
+              posée, rythme cinématique et identité visuelle au service du message.
             </p>
           </div>
         </div>
 
-        {/* Filters */}
-        <div className="mt-12 flex flex-wrap gap-2">
-          {(["all", "Montage", "Voix off", "Reel"] as const).map((f) => (
-            <button
-              key={f}
-              type="button"
-              onClick={() => setFilter(f)}
-              className={`rounded-full border px-4 py-2 text-xs uppercase tracking-widest transition-all ${
-                filter === f
-                  ? "border-accent bg-accent text-accent-foreground"
-                  : "border-border text-muted-foreground hover:border-accent/50 hover:text-foreground"
-              }`}
-            >
-              {f === "all" ? "Tout" : f}
-            </button>
-          ))}
-        </div>
-
-        {/* Grid */}
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {filtered.map((item, idx) => (
+        {/* Grid — 3 vraies vidéos TikTok */}
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {items.map((item, idx) => (
             <a
               key={item.id}
               href={item.url}
@@ -98,14 +80,14 @@ export function MediaContent() {
               rel="noopener noreferrer"
               className="group relative flex flex-col overflow-hidden rounded-3xl border border-border bg-card transition-all duration-500 hover:-translate-y-2 hover:shadow-deep hover:border-accent/40"
             >
-              {/* Vertical poster (9:16 like a reel) */}
+              {/* Vertical poster (9:16 like a TikTok) */}
               <div
                 className="relative aspect-[9/16] w-full overflow-hidden"
                 style={{
-                  background: `linear-gradient(${135 + idx * 30}deg, color-mix(in oklab, var(--primary) ${60 - idx * 8}%, var(--background)), color-mix(in oklab, var(--accent) ${40 + idx * 5}%, var(--background)))`,
+                  background: `linear-gradient(${135 + idx * 45}deg, color-mix(in oklab, var(--primary) ${65 - idx * 10}%, var(--background)), color-mix(in oklab, var(--accent) ${40 + idx * 8}%, var(--background)))`,
                 }}
               >
-                {/* Animated noise / gradient overlay */}
+                {/* Gradient overlay */}
                 <div
                   className="absolute inset-0 opacity-30 mix-blend-overlay"
                   style={{
@@ -130,22 +112,17 @@ export function MediaContent() {
                   </div>
                 </div>
 
-                {/* Top meta */}
+                {/* Top meta — TikTok */}
                 <div className="absolute top-4 left-4 right-4 flex items-center justify-between">
                   <span className="rounded-full bg-background/90 backdrop-blur px-3 py-1 text-[10px] uppercase tracking-widest text-foreground">
-                    {platformIcon(item.platform)} {item.platform}
+                    🎵 TikTok
                   </span>
-                  {item.duration && (
-                    <span className="rounded-full bg-foreground/80 backdrop-blur px-2.5 py-1 text-[10px] font-mono text-background">
-                      {item.duration}
-                    </span>
-                  )}
                 </div>
 
-                {/* Bottom type badge */}
+                {/* Bottom badge */}
                 <div className="absolute bottom-4 left-4">
                   <span className="rounded-full bg-accent text-accent-foreground px-3 py-1 text-[10px] uppercase tracking-widest">
-                    {item.type}
+                    {item.client}
                   </span>
                 </div>
               </div>
@@ -159,7 +136,7 @@ export function MediaContent() {
                   {item.description}
                 </p>
                 <span className="mt-2 inline-flex items-center gap-1.5 text-[10px] uppercase tracking-widest text-accent opacity-0 group-hover:opacity-100 transition-opacity">
-                  Voir la vidéo
+                  Voir sur TikTok
                   <svg className="h-3 w-3" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
@@ -173,39 +150,22 @@ export function MediaContent() {
         <div className="mt-12 flex flex-wrap items-center justify-between gap-4 rounded-3xl border border-border bg-card/50 backdrop-blur-sm p-6 lg:p-8">
           <div>
             <p className="font-display text-2xl text-primary">
-              Plus de contenus sur mes réseaux
+              Retrouvez tous mes montages sur TikTok
             </p>
             <p className="mt-1 text-sm text-muted-foreground">
-              Coulisses, tutoriels et créations en continu.
+              Voix off, montages clients et créations en continu.
             </p>
           </div>
-          <div className="flex flex-wrap gap-2">
-            <a
-              href="https://www.tiktok.com/@mamefatouwade"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-5 py-2.5 text-sm transition-transform hover:-translate-y-0.5"
-            >
-              🎵 TikTok
-            </a>
-            <a
-              href="https://youtube.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-5 py-2.5 text-sm transition-colors hover:border-accent/50"
-            >
-              ▶ YouTube
-            </a>
-            <a
-              href="https://instagram.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-5 py-2.5 text-sm transition-colors hover:border-accent/50"
-            >
-              ◉ Instagram
-            </a>
-          </div>
+          <a
+            href="https://www.tiktok.com/@mamefatouwade"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-6 py-3 text-sm transition-transform hover:-translate-y-0.5"
+          >
+            🎵 @mamefatouwade
+          </a>
         </div>
+      </div>
       </div>
     </section>
   );
