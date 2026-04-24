@@ -166,7 +166,6 @@ export function MediaContent() {
           </a>
         </div>
       </div>
-      </div>
     </section>
   );
 }
