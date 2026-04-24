@@ -28,8 +28,8 @@ export function Navbar() {
     >
       <nav className="mx-auto flex w-full max-w-none items-center justify-between px-6 py-5 lg:px-12">
         <a href="#top" className="group flex items-center gap-2">
-          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-primary text-primary-foreground font-display text-lg">
-            m
+          <span className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground font-display text-sm tracking-wider">
+            MFW
           </span>
           <span className="font-display text-lg tracking-tight">
             Mame Fatou <span className="text-accent">Wade</span>
