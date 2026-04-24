@@ -1,64 +1,40 @@
-import { useState } from "react";
-
 type MediaItem = {
   id: string;
   title: string;
-  platform: "TikTok" | "YouTube" | "Instagram";
-  type: "Montage" | "Voix off" | "Reel";
+  client: string;
   url: string;
-  duration?: string;
   description: string;
 };
 
-// 👉 Remplace les URLs par tes vrais liens TikTok / YouTube / Instagram
+// Vraies vidéos TikTok montées avec voix off
 const items: MediaItem[] = [
   {
     id: "v1",
-    title: "Coulisses de dev — épisode 01",
-    platform: "TikTok",
-    type: "Montage",
+    title: "SmartCouture",
+    client: "Montage & voix off",
     url: "https://www.tiktok.com/@mamefatouwade",
-    duration: "0:45",
-    description: "Une journée dans la vie d'une dev IA à Dakar.",
+    description:
+      "Mise en avant de la plateforme couture intelligente — narration et montage rythmé pour valoriser l'expérience utilisateur.",
   },
   {
     id: "v2",
-    title: "Voix off — projet Saytu",
-    platform: "YouTube",
-    type: "Voix off",
-    url: "https://youtube.com/",
-    duration: "2:10",
-    description: "Narration institutionnelle pour la présentation officielle.",
+    title: "Emergia VR",
+    client: "Montage & voix off",
+    url: "https://www.tiktok.com/@mamefatouwade",
+    description:
+      "Immersion vidéo dans l'univers réalité virtuelle d'Emergia — voix off institutionnelle et transitions cinématiques.",
   },
   {
     id: "v3",
-    title: "Recette du week-end",
-    platform: "TikTok",
-    type: "Reel",
+    title: "Safety Service Security",
+    client: "Montage & voix off",
     url: "https://www.tiktok.com/@mamefatouwade",
-    duration: "0:30",
-    description: "Quand le code fait pause — cuisine sénégalaise revisitée.",
-  },
-  {
-    id: "v4",
-    title: "Démo Tima Love",
-    platform: "Instagram",
-    type: "Montage",
-    url: "https://instagram.com/",
-    duration: "1:00",
-    description: "Walkthrough produit pour le lancement de la boutique.",
+    description:
+      "Présentation corporate des services de sécurité — ton sérieux, voix off posée et identité visuelle soignée.",
   },
 ];
 
-const platformIcon = (p: MediaItem["platform"]) => {
-  if (p === "TikTok") return "🎵";
-  if (p === "YouTube") return "▶";
-  return "◉";
-};
-
 export function MediaContent() {
-  const [filter, setFilter] = useState<"all" | MediaItem["type"]>("all");
-  const filtered = filter === "all" ? items : items.filter((i) => i.type === filter);
 
   return (
     <section
