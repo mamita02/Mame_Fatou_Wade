@@ -31,7 +31,7 @@ const certs = [
 export function Certifications() {
   return (
     <section id="certifications" className="relative py-24 lg:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-12">
+      <div className="mx-auto w-full max-w-none px-6 lg:px-12">
         <div className="flex flex-wrap items-end justify-between gap-8">
           <div className="max-w-2xl">
             <p className="text-xs uppercase tracking-[0.3em] text-accent">Diplômes & certifications</p>

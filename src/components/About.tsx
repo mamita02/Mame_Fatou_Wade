@@ -1,7 +1,7 @@
 export function About() {
   return (
     <section id="about" className="relative py-24 lg:py-32">
-      <div className="mx-auto grid max-w-7xl gap-16 px-6 lg:grid-cols-12 lg:px-12">
+      <div className="mx-auto grid w-full max-w-none gap-16 px-6 lg:grid-cols-12 lg:px-12">
         <div className="lg:col-span-5">
           <p className="text-xs uppercase tracking-[0.3em] text-accent">À propos</p>
           <h2 className="mt-4 font-display text-4xl text-primary lg:text-5xl text-balance">

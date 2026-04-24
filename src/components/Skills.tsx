@@ -20,7 +20,7 @@ const groups = [
 export function Skills() {
   return (
     <section id="skills" className="relative bg-secondary py-24 lg:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-12">
+      <div className="mx-auto w-full max-w-none px-6 lg:px-12">
         <div className="flex flex-col items-start gap-4 lg:flex-row lg:items-end lg:justify-between">
           <div>
             <p className="text-xs uppercase tracking-[0.3em] text-accent">Expertise</p>

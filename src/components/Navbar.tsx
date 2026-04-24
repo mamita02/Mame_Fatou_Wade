@@ -26,7 +26,7 @@ export function Navbar() {
         scrolled ? "bg-background/80 backdrop-blur-md border-b border-border/60" : "bg-transparent"
       }`}
     >
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-12">
+      <nav className="mx-auto flex w-full max-w-none items-center justify-between px-6 py-5 lg:px-12">
         <a href="#top" className="group flex items-center gap-2">
           <span className="flex h-9 w-9 items-center justify-center rounded-full bg-primary text-primary-foreground font-display text-lg">
             m
