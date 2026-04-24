@@ -40,7 +40,7 @@ const certs = [
 export function Certifications() {
   return (
     <section id="certifications" className="relative py-24 lg:py-32">
-      <div className="mx-auto w-full max-w-none px-6 lg:px-16 xl:px-24">
+      <div className="mx-auto w-full max-w-none px-6 lg:px-12 xl:px-16">
         <div className="flex flex-wrap items-end justify-between gap-8">
           <div className="max-w-2xl">
             <p className="text-xs uppercase tracking-[0.3em] text-accent">Diplômes & certifications</p>
@@ -79,9 +79,9 @@ export function Certifications() {
 
               <div className="relative">
                 <div className="flex items-start justify-between">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary text-primary-foreground shadow-soft">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary text-primary-foreground shadow-soft">
                     <svg
-                      className="h-7 w-7"
+                      className="h-5 w-5"
                       fill="none"
                       stroke="currentColor"
                       strokeWidth="1.5"
@@ -94,21 +94,21 @@ export function Certifications() {
                       />
                     </svg>
                   </div>
-                  <span className="font-display text-3xl text-accent">{c.year}</span>
+                  <span className="font-display text-2xl text-accent">{c.year}</span>
                 </div>
 
-                <h3 className="mt-6 font-display text-2xl text-primary">{c.title}</h3>
-                <p className="mt-1 text-xs uppercase tracking-widest text-muted-foreground">
+                <h3 className="mt-5 font-display text-lg text-primary leading-tight">{c.title}</h3>
+                <p className="mt-1 text-[10px] uppercase tracking-widest text-muted-foreground">
                   {c.issuer}
                 </p>
-                <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
+                <p className="mt-3 text-xs text-muted-foreground leading-relaxed">
                   {c.description}
                 </p>
 
-                <div className="mt-6 flex items-center gap-2 text-sm font-medium text-primary">
-                  <span>Consulter le document</span>
+                <div className="mt-5 flex items-center gap-2 text-xs font-medium text-primary">
+                  <span>Consulter</span>
                   <svg
-                    className="h-4 w-4 transition-transform group-hover:translate-x-1"
+                    className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1"
                     fill="none"
                     stroke="currentColor"
                     strokeWidth="2"
