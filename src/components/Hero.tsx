@@ -1,6 +1,4 @@
-import charLeft from "@/assets/char-3d-left.png";
 import charFront from "@/assets/char-3d-front.png";
-import charRight from "@/assets/char-3d-right.png";
 
 export function Hero() {
   return (
@@ -64,39 +62,18 @@ export function Hero() {
           </dl>
         </div>
 
-        {/* RIGHT — 3 avatars 3D, no box, no text */}
-        <div className="relative lg:col-span-6 lg:-ml-12">
-          <div className="relative mx-auto flex h-[34rem] w-full items-end justify-between lg:h-[40rem]">
+        {/* RIGHT — single 3D avatar, transparent */}
+        <div className="relative lg:col-span-6 flex items-center justify-center">
+          <div className="relative mx-auto flex h-[34rem] w-full items-end justify-center lg:h-[40rem]">
             {/* Soft warm halo behind */}
-            <div className="pointer-events-none absolute inset-x-0 bottom-8 -z-10 h-2/3 rounded-[3rem] bg-gradient-warm opacity-70 blur-3xl" />
+            <div className="pointer-events-none absolute inset-x-0 bottom-8 -z-10 h-2/3 rounded-[3rem] bg-gradient-warm opacity-60 blur-3xl" />
 
-            {/* Left avatar */}
-            <img
-              src={charLeft}
-              alt="Avatar 3D — vue de gauche"
-              width={768}
-              height={1024}
-              className="relative h-[18rem] w-auto shrink-0 object-contain drop-shadow-[0_25px_25px_rgba(60,30,15,0.3)] animate-float lg:h-[22rem]"
-              style={{ animationDelay: "0s" }}
-            />
-
-            {/* Center avatar — biggest */}
             <img
               src={charFront}
-              alt="Avatar 3D — vue de face, tenant une sphère IA"
-              width={768}
-              height={1024}
-              className="relative z-10 -mx-4 h-[32rem] w-auto shrink-0 object-contain drop-shadow-[0_35px_40px_rgba(60,30,15,0.45)] lg:h-[38rem]"
-            />
-
-            {/* Right avatar */}
-            <img
-              src={charRight}
-              alt="Avatar 3D — vue de droite, codant"
-              width={768}
-              height={1024}
-              className="relative h-[18rem] w-auto shrink-0 object-contain drop-shadow-[0_25px_25px_rgba(60,30,15,0.3)] animate-float lg:h-[22rem]"
-              style={{ animationDelay: "1.5s" }}
+              alt="Avatar 3D — femme voilée codant sur un ordinateur portable"
+              width={896}
+              height={1152}
+              className="relative z-10 h-full w-auto object-contain drop-shadow-[0_35px_40px_rgba(60,30,15,0.45)]"
             />
           </div>
         </div>
