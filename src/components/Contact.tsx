@@ -47,9 +47,54 @@ export function Contact() {
         </div>
       </div>
 
-      <footer className="relative mx-auto mt-24 flex w-full max-w-none flex-col items-center justify-between gap-4 border-t border-border px-6 pt-8 text-sm text-muted-foreground sm:flex-row lg:px-12">
-        <p>© {new Date().getFullYear()} Mame Fatou Wade — Tous droits réservés.</p>
-        <p className="font-display italic">Crafted with care in Dakar.</p>
+      <footer className="relative mx-auto mt-24 w-full max-w-none border-t border-border px-6 pt-12 pb-8 lg:px-12">
+        <div className="flex flex-col gap-10 lg:flex-row lg:items-start lg:justify-between">
+          <div className="flex items-start gap-4">
+            <span className="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-primary-foreground font-display text-sm tracking-wider shadow-soft">
+              MFW
+            </span>
+            <div>
+              <p className="font-display text-xl text-primary">
+                Mame Fatou <span className="text-accent">Wade</span>
+              </p>
+              <p className="mt-1 text-sm text-muted-foreground">
+                Ingénieure IA & Développeuse full-stack
+              </p>
+            </div>
+          </div>
+
+          <div className="grid gap-8 sm:grid-cols-3">
+            <div>
+              <p className="text-xs uppercase tracking-[0.25em] text-accent">Navigation</p>
+              <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
+                <li><a href="#about" className="hover:text-primary transition-colors">À propos</a></li>
+                <li><a href="#work" className="hover:text-primary transition-colors">Réalisations</a></li>
+                <li><a href="#flagship" className="hover:text-primary transition-colors">Projets phares</a></li>
+              </ul>
+            </div>
+            <div>
+              <p className="text-xs uppercase tracking-[0.25em] text-accent">Plus</p>
+              <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
+                <li><a href="#experience" className="hover:text-primary transition-colors">Parcours</a></li>
+                <li><a href="#media" className="hover:text-primary transition-colors">Studio</a></li>
+                <li><a href="#certifications" className="hover:text-primary transition-colors">Diplômes</a></li>
+              </ul>
+            </div>
+            <div>
+              <p className="text-xs uppercase tracking-[0.25em] text-accent">Contact</p>
+              <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
+                <li><a href="mailto:mamefatouwade@esp.sn" className="hover:text-primary transition-colors">mamefatouwade@esp.sn</a></li>
+                <li><a href="tel:+221782950135" className="hover:text-primary transition-colors">+221 78 295 01 35</a></li>
+                <li>Keur Massar · Dakar</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-10 flex flex-col items-center justify-between gap-3 border-t border-border pt-6 text-sm text-muted-foreground sm:flex-row">
+          <p>© {new Date().getFullYear()} Mame Fatou Wade — Tous droits réservés.</p>
+          <p className="font-display italic">Crafted with care in Dakar.</p>
+        </div>
       </footer>
     </section>
   );

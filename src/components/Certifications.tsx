@@ -26,6 +26,15 @@ const certs = [
     file: "/certifications/Attestation_Stage.pdf",
     accent: "from-accent/25 to-primary/10",
   },
+  {
+    title: "Attestation de Stage",
+    issuer: "Stage professionnel",
+    year: "2024",
+    description:
+      "Attestation officielle de stage validant l'expérience professionnelle de Mame Fatou Wade.",
+    file: "/certifications/Attestation_de_stage_Mame_Fatou.pdf",
+    accent: "from-primary/25 to-accent/10",
+  },
 ];
 
 export function Certifications() {
