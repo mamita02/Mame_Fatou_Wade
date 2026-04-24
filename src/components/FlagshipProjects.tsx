@@ -113,7 +113,7 @@ export function FlagshipProjects() {
         style={{ backgroundColor: `color-mix(in oklab, ${current.accent} 30%, transparent)` }}
       />
 
-      <div className="relative mx-auto w-full max-w-none px-6 lg:px-12">
+      <div className="relative mx-auto w-full max-w-none px-6 lg:px-16 xl:px-24">
         {/* Header */}
         <div className="grid gap-6 lg:grid-cols-12 lg:items-end">
           <div className="lg:col-span-8">
