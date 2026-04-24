@@ -1,9 +1,14 @@
+import smartcoutureImg from "@/assets/media-smartcouture.png";
+import emergiaImg from "@/assets/media-emergia.png";
+import safetyImg from "@/assets/media-safety.png";
+
 type MediaItem = {
   id: string;
   title: string;
   client: string;
   url: string;
   description: string;
+  image: string;
 };
 
 // Vraies vidéos TikTok montées avec voix off
@@ -15,6 +20,7 @@ const items: MediaItem[] = [
     url: "https://www.tiktok.com/@mamefatouwade",
     description:
       "Mise en avant de la plateforme couture intelligente — narration et montage rythmé pour valoriser l'expérience utilisateur.",
+    image: smartcoutureImg,
   },
   {
     id: "v2",
@@ -23,6 +29,7 @@ const items: MediaItem[] = [
     url: "https://www.tiktok.com/@mamefatouwade",
     description:
       "Immersion vidéo dans l'univers réalité virtuelle d'Emergia — voix off institutionnelle et transitions cinématiques.",
+    image: emergiaImg,
   },
   {
     id: "v3",
@@ -31,6 +38,7 @@ const items: MediaItem[] = [
     url: "https://www.tiktok.com/@mamefatouwade",
     description:
       "Présentation corporate des services de sécurité — ton sérieux, voix off posée et identité visuelle soignée.",
+    image: safetyImg,
   },
 ];
 
@@ -72,7 +80,7 @@ export function MediaContent() {
 
         {/* Grid — 3 vraies vidéos TikTok */}
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {items.map((item, idx) => (
+          {items.map((item) => (
             <a
               key={item.id}
               href={item.url}
@@ -81,20 +89,17 @@ export function MediaContent() {
               className="group relative flex flex-col overflow-hidden rounded-3xl border border-border bg-card transition-all duration-500 hover:-translate-y-2 hover:shadow-deep hover:border-accent/40"
             >
               {/* Vertical poster (9:16 like a TikTok) */}
-              <div
-                className="relative aspect-[9/16] w-full overflow-hidden"
-                style={{
-                  background: `linear-gradient(${135 + idx * 45}deg, color-mix(in oklab, var(--primary) ${65 - idx * 10}%, var(--background)), color-mix(in oklab, var(--accent) ${40 + idx * 8}%, var(--background)))`,
-                }}
-              >
-                {/* Gradient overlay */}
-                <div
-                  className="absolute inset-0 opacity-30 mix-blend-overlay"
-                  style={{
-                    backgroundImage:
-                      "radial-gradient(circle at 20% 20%, white 0%, transparent 50%), radial-gradient(circle at 80% 80%, color-mix(in oklab, var(--accent) 60%, transparent) 0%, transparent 50%)",
-                  }}
+              <div className="relative aspect-[9/16] w-full overflow-hidden bg-muted">
+                {/* Real image */}
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  loading="lazy"
                 />
+
+                {/* Dark overlay for legibility */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/30" />
 
                 {/* Big play glyph */}
                 <div className="absolute inset-0 flex items-center justify-center">
