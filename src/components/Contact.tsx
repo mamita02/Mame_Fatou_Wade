@@ -28,7 +28,7 @@ export function Contact() {
             <span className="text-2xl text-accent transition-transform group-hover:translate-x-1">→</span>
           </a>
           <a
-            href="https://www.linkedin.com/in/mame-fatou-wade"
+            href="https://www.linkedin.com/in/mame-fatou-wade-3024b3220/"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex items-center justify-between rounded-2xl border border-border bg-card p-6 transition-all hover:shadow-soft hover:-translate-y-0.5"
@@ -107,7 +107,7 @@ export function Contact() {
 
         <div className="mt-10 flex flex-col items-center justify-between gap-3 border-t border-border pt-6 text-sm text-muted-foreground sm:flex-row">
           <p>© {new Date().getFullYear()} Mame Fatou Wade — Tous droits réservés.</p>
-          <p className="font-display italic">Crafted with care in Dakar.</p>
+          <p className="font-display italic">Made with love and pride</p>
         </div>
       </footer>
     </section>

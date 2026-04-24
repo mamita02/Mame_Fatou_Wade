@@ -6,7 +6,7 @@ const projects = [
     category: "E-commerce",
     description:
       "Boutique en ligne élégante avec catalogue, panier et paiement intégré. Identité raffinée et expérience d'achat fluide.",
-    tags: ["WordPress", "WooCommerce", "UX"],
+    tags: ["React", "Supabase", "UX"],
     year: "2025",
   },
   {
@@ -16,7 +16,7 @@ const projects = [
     category: "E-commerce Tech",
     description:
       "Plateforme spécialisée dans la vente de matériel informatique avec catalogue dynamique et back-office complet.",
-    tags: ["WordPress", "WooCommerce", "SEO"],
+    tags: ["Tailwind", "Node js", "SEO"],
     year: "2025",
   },
   {
@@ -25,8 +25,8 @@ const projects = [
     domain: "crm.mce-pro.agency",
     category: "SaaS / CRM",
     description:
-      "ERP/CRM sur-mesure avec automatisation Odoo, synchronisation produits & commandes, dashboards temps réel.",
-    tags: ["Odoo", "Python", "Automation"],
+      "ERP/CRM sur-mesure avec automatisation, synchronisation produits & commandes, dashboards temps réel.",
+    tags: ["Supabase", "React", "Automation"],
     year: "2025",
     featured: true,
   },
@@ -37,7 +37,7 @@ const projects = [
     category: "Service Premium",
     description:
       "Site vitrine pour service de voiturier aéroportuaire. Réservation en ligne, identité haut de gamme.",
-    tags: ["React", "Booking", "SEO"],
+    tags: ["Wordpress", "Booking", "SEO"],
     year: "2024",
   },
   {
@@ -47,7 +47,7 @@ const projects = [
     category: "Lifestyle",
     description:
       "Site de marque mêlant storytelling visuel et e-commerce, pensé pour mettre en lumière le produit.",
-    tags: ["WordPress", "Design", "Brand"],
+    tags: ["WordPress", "Woocommerce", "Brand", "Shipping"],
     year: "2024",
   },
   {

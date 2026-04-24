@@ -18,9 +18,9 @@ const certs = [
     accent: "from-primary/30 to-primary/5",
   },
   {
-    title: "Attestation de Stage",
+    title: "Attestation de Master",
     issuer: "UMMISCO — IRD",
-    year: "2024",
+    year: "2025",
     description:
       "Stage en deep learning : modélisation acoustique passive pour la détection des sons de poissons.",
     file: "/certifications/Attestation_Stage.pdf",
@@ -29,7 +29,7 @@ const certs = [
   {
     title: "Attestation de Stage",
     issuer: "Stage professionnel",
-    year: "2024",
+    year: "2025",
     description:
       "Attestation officielle de stage validant l'expérience professionnelle de Mame Fatou Wade.",
     file: "/certifications/Attestation_de_stage_Mame_Fatou.pdf",

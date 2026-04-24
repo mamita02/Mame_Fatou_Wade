@@ -426,8 +426,7 @@ export function Experience() {
               </div>
 
               <p className="mt-8 max-w-xl text-sm text-muted-foreground leading-relaxed">
-                Curieuse de nature, je partage aussi mes coulisses de dev et mes recettes
-                sur les réseaux — un équilibre entre rigueur technique et créativité.
+                Curieuse de nature, je mets ma créativité au service de prestations variées : contenus autour du dev, recettes et bien plus — toujours avec la même rigueur technique.
               </p>
             </div>
           </div>

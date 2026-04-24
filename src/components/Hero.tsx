@@ -64,14 +64,14 @@ export function Hero() {
 
         {/* RIGHT — single 3D avatar, transparent */}
         <div className="relative lg:col-span-6 flex items-center justify-center">
-          <div className="relative mx-auto flex h-[34rem] w-full items-end justify-center lg:h-[40rem]">
+          <div className="relative mx-auto flex h-[36rem] w-full items-end justify-center lg:h-[40rem]">
             {/* Soft warm halo behind */}
             <div className="pointer-events-none absolute inset-x-0 bottom-8 -z-10 h-2/3 rounded-[3rem] bg-gradient-warm opacity-60 blur-3xl" />
 
             <img
               src={charFront}
               alt="Avatar 3D — femme voilée codant sur un ordinateur portable"
-              width={896}
+              width={968}
               height={1152}
               className="relative z-10 h-full w-auto object-contain drop-shadow-[0_35px_40px_rgba(60,30,15,0.45)]"
             />
