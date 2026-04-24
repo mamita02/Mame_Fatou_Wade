@@ -64,14 +64,14 @@ export function Certifications() {
           </a>
         </div>
 
-        <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {certs.map((c) => (
             <a
               key={c.title}
               href={c.file}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative overflow-hidden rounded-3xl border border-border bg-card p-8 transition-all hover:-translate-y-1 hover:shadow-deep"
+              className="group relative overflow-hidden rounded-2xl border border-border bg-card p-6 transition-all hover:-translate-y-1 hover:shadow-deep"
             >
               <div
                 className={`absolute -top-20 -right-20 h-48 w-48 rounded-full bg-gradient-to-br ${c.accent} blur-2xl opacity-60 transition-opacity group-hover:opacity-100`}
