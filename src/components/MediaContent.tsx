@@ -17,7 +17,7 @@ const items: MediaItem[] = [
     id: "v1",
     title: "SmartCouture",
     client: "Montage & voix off",
-    url: "src/assets/SmartCouture.mp4",
+    url: "/assets/SmartCouture.mp4",
     description:
       "Mise en avant de la plateforme couture intelligente — narration et montage rythmé pour valoriser l'expérience utilisateur.",
     image: smartcoutureImg,
@@ -26,7 +26,7 @@ const items: MediaItem[] = [
     id: "v2",
     title: "Emergia VR",
     client: "Montage & voix off",
-    url: "src/assets/EmergiaVR.MP4",
+    url: "/assets/EmergiaVR.MP4",
     description:
       "Immersion vidéo dans l'univers réalité virtuelle d'Emergia — voix off institutionnelle et transitions cinématiques.",
     image: emergiaImg,
@@ -35,7 +35,7 @@ const items: MediaItem[] = [
     id: "v3",
     title: "Safety Service Security",
     client: "Montage & voix off",
-    url: "src/assets/SafetyService.MP4",
+    url: "/assets/SafetyService.MP4",
     description:
       "Présentation corporate des services de sécurité — ton sérieux, voix off posée et identité visuelle soignée.",
     image: safetyImg,
@@ -43,7 +43,6 @@ const items: MediaItem[] = [
 ];
 
 export function MediaContent() {
-
   return (
     <section
       id="media"
