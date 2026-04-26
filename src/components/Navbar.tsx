@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 
 const links = [
-  { href: "#about", label: "À propos" },
-  { href: "#work", label: "Réalisations" },
-  { href: "#flagship", label: "Projets phares" },
-  { href: "#experience", label: "Parcours" },
+  { href: "#about", label: "About" },
+  { href: "#work", label: "Work" },
+  { href: "#flagship", label: "Flagship Projects" },
+  { href: "#experience", label: "Experience" },
   { href: "#media", label: "Studio" },
-  { href: "#certifications", label: "Diplômes" },
+  { href: "#certifications", label: "Certifications" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -57,7 +57,7 @@ export function Navbar() {
           <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3" />
           </svg>
-          Mon CV
+          My Resume
         </a>
       </nav>
     </header>

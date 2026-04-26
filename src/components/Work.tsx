@@ -5,7 +5,7 @@ const projects = [
     domain: "tima-love.com",
     category: "E-commerce",
     description:
-      "Boutique en ligne élégante avec catalogue, panier et paiement intégré. Identité raffinée et expérience d'achat fluide.",
+      "Elegant online store with catalog, cart, and integrated payment. Refined identity and seamless shopping experience.",
     tags: ["React", "Supabase", "UX"],
     year: "2025",
   },
@@ -15,7 +15,7 @@ const projects = [
     domain: "pcnet-univers.com",
     category: "E-commerce Tech",
     description:
-      "Plateforme spécialisée dans la vente de matériel informatique avec catalogue dynamique et back-office complet.",
+      "Platform specialized in selling computer hardware with a dynamic catalog and a complete back-office.",
     tags: ["Tailwind", "Node js", "SEO"],
     year: "2025",
   },
@@ -25,7 +25,7 @@ const projects = [
     domain: "crm.mce-pro.agency",
     category: "SaaS / CRM",
     description:
-      "ERP/CRM sur-mesure avec automatisation, synchronisation produits & commandes, dashboards temps réel.",
+      "Custom ERP/CRM with automation, product & order synchronization, and real-time dashboards.",
     tags: ["Supabase", "React", "Automation"],
     year: "2025",
     featured: true,
@@ -34,9 +34,9 @@ const projects = [
     title: "Fly Valet",
     url: "https://fly-valet.fr/",
     domain: "fly-valet.fr",
-    category: "Service Premium",
+    category: "Premium Service",
     description:
-      "Site vitrine pour service de voiturier aéroportuaire. Réservation en ligne, identité haut de gamme.",
+      "Showcase website for an airport valet service. Online booking, high-end identity.",
     tags: ["Wordpress", "Booking", "SEO"],
     year: "2024",
   },
@@ -46,7 +46,7 @@ const projects = [
     domain: "marimika.com",
     category: "Lifestyle",
     description:
-      "Site de marque mêlant storytelling visuel et e-commerce, pensé pour mettre en lumière le produit.",
+      "Brand website blending visual storytelling and e-commerce, designed to highlight the product.",
     tags: ["WordPress", "Woocommerce", "Brand", "Shipping"],
     year: "2024",
   },
@@ -56,7 +56,7 @@ const projects = [
     domain: "afroduct.com",
     category: "Marketplace",
     description:
-      "Marketplace dédiée aux produits africains : multi-vendeurs, paiement, gestion logistique.",
+      "Marketplace dedicated to African products: multi-vendor, payments, and logistics management.",
     tags: ["WooCommerce", "Multi-vendor", "Payments"],
     year: "2025",
     featured: true,
@@ -69,14 +69,14 @@ export function Work() {
       <div className="mx-auto w-full max-w-none px-6 lg:px-16 xl:px-24">
         <div className="flex flex-col items-start gap-4 lg:flex-row lg:items-end lg:justify-between">
           <div>
-            <p className="text-xs uppercase tracking-[0.3em] text-accent">Réalisations</p>
+            <p className="text-xs uppercase tracking-[0.3em] text-accent">Work</p>
             <h2 className="mt-4 font-display text-4xl text-primary lg:text-5xl text-balance">
-              Six projets,<br />une même exigence.
+              Six projects,<br />one shared standard.
             </h2>
           </div>
           <p className="max-w-md text-muted-foreground">
-            Une sélection de plateformes livrées en production — du e-commerce
-            élégant aux ERP métiers.
+            A selection of platforms delivered in production — from elegant e-commerce
+            to business ERPs.
           </p>
         </div>
 
@@ -123,7 +123,7 @@ export function Work() {
                   ))}
                 </div>
                 <span className="flex items-center gap-2 text-sm font-medium text-primary transition-all group-hover:text-primary-foreground group-hover:translate-x-1">
-                  Visiter →
+                  Visit →
                 </span>
               </div>
 

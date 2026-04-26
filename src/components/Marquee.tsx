@@ -5,13 +5,15 @@ const items = [
 ];
 
 export function Marquee() {
+  // Duplicating the array to create a seamless infinite scrolling effect
   const loop = [...items, ...items];
+  
   return (
     <section className="relative overflow-hidden border-y border-border bg-primary py-6 text-primary-foreground">
       <div className="flex animate-marquee whitespace-nowrap">
         {loop.map((it, i) => (
           <span
-            key={i}
+            key={`${it}-${i}`}
             className="mx-8 inline-flex items-center gap-8 font-display text-2xl tracking-tight opacity-90"
           >
             {it}

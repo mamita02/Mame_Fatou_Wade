@@ -1,18 +1,18 @@
 const groups = [
   {
-    title: "Développement",
+    title: "Development",
     items: ["HTML / CSS", "JavaScript / TypeScript", "React", "PHP", "Node.js", "Flutter", "Java"],
   },
   {
-    title: "IA & Data",
+    title: "AI & Data",
     items: ["Python", "TensorFlow", "PyTorch", "Pandas", "CNN / LSTM / RNN", "Random Forest", "Power BI"],
   },
   {
-    title: "Bases & Cloud",
+    title: "Databases & Cloud",
     items: ["PostgreSQL", "Oracle PL/SQL", "MariaDB", "NoSQL", "AWS", "Azure", "Google Cloud"],
   },
   {
-    title: "Outils & Plateformes",
+    title: "Tools & Platforms",
     items: ["Supabase", "Odoo", "WordPress", "Docker", "Git", "Figma", "Postman"],
   },
 ];
@@ -25,12 +25,11 @@ export function Skills() {
           <div>
             <p className="text-xs uppercase tracking-[0.3em] text-accent">Expertise</p>
             <h2 className="mt-4 font-display text-4xl text-primary lg:text-5xl">
-              Une stack complète,<br />pensée pour livrer.
+              A complete stack,<br />built to deliver.
             </h2>
           </div>
           <p className="max-w-md text-muted-foreground">
-            De la couche modèle jusqu'à l'interface utilisateur, je maîtrise chaque
-            étape du cycle produit.
+            From the model layer to the user interface, I master every step of the product lifecycle.
           </p>
         </div>
 

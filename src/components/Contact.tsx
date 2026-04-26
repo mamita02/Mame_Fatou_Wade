@@ -8,11 +8,11 @@ export function Contact() {
         <div className="lg:col-span-7">
           <p className="text-xs uppercase tracking-[0.3em] text-accent">Contact</p>
           <h2 className="mt-4 font-display text-5xl text-primary lg:text-7xl text-balance">
-            Discutons de votre prochain projet.
+            Let's discuss your next project.
           </h2>
           <p className="mt-6 max-w-xl text-lg text-muted-foreground">
-            Une idée, un MVP, un site à refondre, un modèle IA à intégrer ?
-            J'aime les projets ambitieux et les équipes qui les portent.
+            An idea, an MVP, a website to redesign, an AI model to integrate?
+            I love ambitious projects and the teams behind them.
           </p>
         </div>
 
@@ -46,14 +46,14 @@ export function Contact() {
             className="group flex items-center justify-between rounded-2xl border border-border bg-card p-6 transition-all hover:shadow-soft hover:-translate-y-0.5"
           >
             <div>
-              <p className="text-xs uppercase tracking-widest text-muted-foreground">Téléphone</p>
+              <p className="text-xs uppercase tracking-widest text-muted-foreground">Phone</p>
               <p className="mt-1 font-display text-xl text-primary">+221 78 295 01 35</p>
             </div>
             <span className="text-2xl text-accent transition-transform group-hover:translate-x-1">→</span>
           </a>
           <div className="flex items-center justify-between rounded-2xl border border-border bg-card p-6">
             <div>
-              <p className="text-xs uppercase tracking-widest text-muted-foreground">Localisation</p>
+              <p className="text-xs uppercase tracking-widest text-muted-foreground">Location</p>
               <p className="mt-1 font-display text-xl text-primary">Keur Massar · Dakar</p>
             </div>
             <span className="text-2xl text-accent">●</span>
@@ -72,7 +72,7 @@ export function Contact() {
                 Mame Fatou <span className="text-accent">Wade</span>
               </p>
               <p className="mt-1 text-sm text-muted-foreground">
-                Ingénieure IA & Développeuse full-stack
+                AI Engineer & Full-stack Developer
               </p>
             </div>
           </div>
@@ -81,17 +81,17 @@ export function Contact() {
             <div>
               <p className="text-xs uppercase tracking-[0.25em] text-accent">Navigation</p>
               <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
-                <li><a href="#about" className="hover:text-primary transition-colors">À propos</a></li>
-                <li><a href="#work" className="hover:text-primary transition-colors">Réalisations</a></li>
-                <li><a href="#flagship" className="hover:text-primary transition-colors">Projets phares</a></li>
+                <li><a href="#about" className="hover:text-primary transition-colors">About</a></li>
+                <li><a href="#work" className="hover:text-primary transition-colors">Work</a></li>
+                <li><a href="#flagship" className="hover:text-primary transition-colors">Flagship Projects</a></li>
               </ul>
             </div>
             <div>
-              <p className="text-xs uppercase tracking-[0.25em] text-accent">Plus</p>
+              <p className="text-xs uppercase tracking-[0.25em] text-accent">More</p>
               <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
-                <li><a href="#experience" className="hover:text-primary transition-colors">Parcours</a></li>
+                <li><a href="#experience" className="hover:text-primary transition-colors">Experience</a></li>
                 <li><a href="#media" className="hover:text-primary transition-colors">Studio</a></li>
-                <li><a href="#certifications" className="hover:text-primary transition-colors">Diplômes</a></li>
+                <li><a href="#certifications" className="hover:text-primary transition-colors">Certifications</a></li>
               </ul>
             </div>
             <div>
@@ -106,7 +106,7 @@ export function Contact() {
         </div>
 
         <div className="mt-10 flex flex-col items-center justify-between gap-3 border-t border-border pt-6 text-sm text-muted-foreground sm:flex-row">
-          <p>© {new Date().getFullYear()} Mame Fatou Wade — Tous droits réservés.</p>
+          <p>© {new Date().getFullYear()} Mame Fatou Wade — All rights reserved.</p>
           <p className="font-display italic">Made with love and pride</p>
         </div>
       </footer>

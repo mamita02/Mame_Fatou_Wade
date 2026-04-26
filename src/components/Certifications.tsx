@@ -4,34 +4,34 @@ const certs = [
     issuer: "Oracle Corporation",
     year: "2024",
     description:
-      "Certification officielle Oracle validant les compétences en bases de données et développement SQL.",
+      "Official Oracle certification validating skills in databases and SQL development.",
     file: "/certifications/Oracle_Certificate.pdf",
     accent: "from-accent/30 to-accent/5",
   },
   {
-    title: "Attestation de Licence",
+    title: "Bachelor's Certificate",
     issuer: "École Supérieure Polytechnique — UCAD",
     year: "2023",
     description:
-      "Licence en Informatique — option Génie Logiciel. Diplôme officiel délivré par l'UCAD.",
+      "Bachelor's in Computer Science — Software Engineering option. Official diploma issued by UCAD.",
     file: "/certifications/Attestation_Licence.pdf",
     accent: "from-primary/30 to-primary/5",
   },
   {
-    title: "Attestation de Master",
+    title: "Master's Certificate",
     issuer: "UMMISCO — IRD",
     year: "2025",
     description:
-      "Stage en deep learning : modélisation acoustique passive pour la détection des sons de poissons.",
+      "Deep learning internship: passive acoustic modeling for fish sound detection.",
     file: "/certifications/Attestation_Stage.pdf",
     accent: "from-accent/25 to-primary/10",
   },
   {
-    title: "Attestation de Stage",
-    issuer: "Stage professionnel",
+    title: "Internship Certificate",
+    issuer: "Professional Internship",
     year: "2025",
     description:
-      "Attestation officielle de stage validant l'expérience professionnelle de Mame Fatou Wade.",
+      "Official internship certificate validating the professional experience of Mame Fatou Wade.",
     file: "/certifications/Attestation_de_stage_Mame_Fatou.pdf",
     accent: "from-primary/25 to-accent/10",
   },
@@ -43,13 +43,13 @@ export function Certifications() {
       <div className="mx-auto w-full max-w-none px-6 lg:px-12 xl:px-16">
         <div className="flex flex-wrap items-end justify-between gap-8">
           <div className="max-w-2xl">
-            <p className="text-xs uppercase tracking-[0.3em] text-accent">Diplômes & certifications</p>
+            <p className="text-xs uppercase tracking-[0.3em] text-accent">Diplomas & certifications</p>
             <h2 className="mt-4 font-display text-4xl text-primary lg:text-5xl text-balance">
-              Preuves, pas promesses.
+              Proofs, not promises.
             </h2>
             <p className="mt-4 text-muted-foreground">
-              Chaque document ci-dessous est téléchargeable — diplômes, attestations de stage
-              et certifications officielles.
+              Each document below is downloadable — diplomas, internship certificates,
+              and official certifications.
             </p>
           </div>
           <a
@@ -60,7 +60,7 @@ export function Certifications() {
             <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3" />
             </svg>
-            CV complet (PDF)
+            Full resume (PDF)
           </a>
         </div>
 
@@ -106,7 +106,7 @@ export function Certifications() {
                 </p>
 
                 <div className="mt-5 flex items-center gap-2 text-xs font-medium text-primary">
-                  <span>Consulter</span>
+                  <span>View</span>
                   <svg
                     className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1"
                     fill="none"

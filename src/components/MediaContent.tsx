@@ -11,33 +11,33 @@ type MediaItem = {
   image: string;
 };
 
-// Vraies vidéos TikTok montées avec voix off
+// Real TikTok videos edited with voiceover
 const items: MediaItem[] = [
   {
     id: "v1",
     title: "SmartCouture",
-    client: "Montage & voix off",
+    client: "Editing & Voiceover",
     url: "/assets/SmartCouture.mp4",
     description:
-      "Mise en avant de la plateforme couture intelligente — narration et montage rythmé pour valoriser l'expérience utilisateur.",
+      "Showcasing the smart couture platform — narration and fast-paced editing to highlight the user experience.",
     image: smartcoutureImg,
   },
   {
     id: "v2",
     title: "Emergia VR",
-    client: "Montage & voix off",
+    client: "Editing & Voiceover",
     url: "/assets/EmergiaVR.MP4",
     description:
-      "Immersion vidéo dans l'univers réalité virtuelle d'Emergia — voix off institutionnelle et transitions cinématiques.",
+      "Video immersion into the virtual reality universe of Emergia — institutional voiceover and cinematic transitions.",
     image: emergiaImg,
   },
   {
     id: "v3",
     title: "Safety Service Security",
-    client: "Montage & voix off",
+    client: "Editing & Voiceover",
     url: "/assets/SafetyService.MP4",
     description:
-      "Présentation corporate des services de sécurité — ton sérieux, voix off posée et identité visuelle soignée.",
+      "Corporate presentation of security services — serious tone, steady voiceover, and a polished visual identity.",
     image: safetyImg,
   },
 ];
@@ -63,21 +63,21 @@ export function MediaContent() {
         {/* Header */}
         <div className="grid gap-6 lg:grid-cols-12 lg:items-end">
           <div className="lg:col-span-8">
-            <p className="text-xs uppercase tracking-[0.3em] text-accent">Studio créatif</p>
+            <p className="text-xs uppercase tracking-[0.3em] text-accent">Creative Studio</p>
             <h2 className="mt-4 font-display text-4xl text-primary lg:text-6xl text-balance">
-              Montage vidéo
-              <span className="block italic text-accent">& voix off.</span>
+              Video editing
+              <span className="block italic text-accent">& voiceover.</span>
             </h2>
           </div>
           <div className="lg:col-span-4">
             <p className="text-muted-foreground leading-relaxed">
-              Trois projets clients montés et narrés de A à Z — voix off
-              posée, rythme cinématique et identité visuelle au service du message.
+              Three client projects edited and narrated from A to Z — steady voiceover,
+              cinematic pacing, and visual identity serving the message.
             </p>
           </div>
         </div>
 
-        {/* Grid — 3 vraies vidéos TikTok */}
+        {/* Grid — 3 real TikTok videos */}
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((item) => (
             <a
@@ -140,7 +140,7 @@ export function MediaContent() {
                   {item.description}
                 </p>
                 <span className="mt-2 inline-flex items-center gap-1.5 text-[10px] uppercase tracking-widest text-accent opacity-0 group-hover:opacity-100 transition-opacity">
-                  Voir sur TikTok
+                  Watch on TikTok
                   <svg className="h-3 w-3" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
@@ -154,10 +154,10 @@ export function MediaContent() {
         <div className="mt-12 flex flex-wrap items-center justify-between gap-4 rounded-3xl border border-border bg-card/50 backdrop-blur-sm p-6 lg:p-8">
           <div>
             <p className="font-display text-2xl text-primary">
-              Retrouvez tous mes montages sur TikTok
+              Find all my edits on TikTok
             </p>
             <p className="mt-1 text-sm text-muted-foreground">
-              Voix off, montages clients et créations en continu.
+              Voiceovers, client edits, and continuous creations.
             </p>
           </div>
           <a

@@ -3,39 +3,39 @@ import portrait from "@/assets/portrait-mfw.jpg";
 import soutenance from "@/assets/mfw-soutenance.jpg";
 
 const photos = [
-  { src: portrait, caption: "Portrait studio" },
-  { src: soutenance, caption: "Soutenance — Master IA & Big Data" },
+  { src: portrait, caption: "Studio portrait" },
+  { src: soutenance, caption: "Defense — Master AI & Big Data" },
 ];
 
 const items = [
   {
     year: "2025",
-    period: "En cours",
-    role: "Développeuse IA / Web",
+    period: "Present",
+    role: "AI / Web Developer",
     company: "MCE Sénégal",
     tag: "Full-stack · CRM",
     description:
-      "Sites web, chatbots et automatisations CRM. Construction d'un ERP reliant Odoo à une plateforme e-commerce via Python.",
+      "Websites, chatbots, and CRM automations. Built an ERP connecting Odoo to an e-commerce platform via Python.",
     stack: ["Python", "Odoo", "React", "n8n"],
   },
   {
     year: "2024",
-    period: "Stage recherche",
-    role: "Stagiaire IA & Big Data",
+    period: "Research Internship",
+    role: "AI & Big Data Intern",
     company: "UMMISCO – IRD",
     tag: "Deep Learning",
     description:
-      "Modèle de détection et classification des sons de poissons en milieu acoustique passif via deep learning.",
+      "Detection and classification model for fish sounds in passive acoustic environments using deep learning.",
     stack: ["TensorFlow", "Librosa", "Python"],
   },
   {
     year: "2023",
-    period: "Alternance",
-    role: "Développeuse Web & Mobile",
+    period: "Work-study",
+    role: "Web & Mobile Developer",
     company: "Kwingo Group",
     tag: "Mobile · Web",
     description:
-      "Applications web et mobiles en Flutter et JavaScript, conception et gestion des bases de données SQL.",
+      "Web and mobile applications in Flutter and JavaScript, SQL database design and management.",
     stack: ["Flutter", "JavaScript", "SQL"],
   },
 ];
@@ -124,16 +124,15 @@ export function Experience() {
         {/* Header */}
         <div className="grid gap-6 lg:grid-cols-12 lg:items-end">
           <div className="lg:col-span-8">
-            <p className="text-xs uppercase tracking-[0.3em] text-accent">Parcours</p>
+            <p className="text-xs uppercase tracking-[0.3em] text-accent">Experience</p>
             <h2 className="mt-4 font-display text-4xl text-primary lg:text-6xl text-balance">
-              Cinq années à construire des produits
-              <span className="block italic text-accent">qui comptent vraiment.</span>
+              Five years of building products
+              <span className="block italic text-accent">that truly matter.</span>
             </h2>
           </div>
           <div className="lg:col-span-4">
             <p className="text-muted-foreground leading-relaxed">
-              Survolez la chronologie pour explorer chaque chapitre — de la recherche en deep
-              learning à un observatoire pour l'État.
+              Hover over the timeline to explore each chapter — from deep learning research to a government observatory.
             </p>
           </div>
         </div>
@@ -195,7 +194,7 @@ export function Experience() {
                     style={{ transform: "translateZ(50px)" }}
                   >
                     <p className="text-[10px] uppercase tracking-widest text-muted-foreground">
-                      Étape actuelle
+                      Current Stage
                     </p>
                     <p className="font-display text-2xl text-primary leading-none mt-1">
                       {items[active].year}
@@ -236,7 +235,7 @@ export function Experience() {
                   style={{ transform: "translateZ(60px)" }}
                 >
                   <p className="text-[10px] uppercase tracking-widest text-muted-foreground">
-                    <span className="text-accent">●</span> Dakar · Sénégal
+                    <span className="text-accent">●</span> Dakar · Senegal
                   </p>
                 </div>
               </div>
@@ -251,7 +250,7 @@ export function Experience() {
                     className={`h-1.5 rounded-full transition-all ${
                       i === active ? "w-12 bg-accent" : "w-6 bg-border hover:bg-muted-foreground/40"
                     }`}
-                    aria-label={`Étape ${i + 1}`}
+                    aria-label={`Stage ${i + 1}`}
                   />
                 ))}
               </div>
@@ -352,16 +351,16 @@ export function Experience() {
           <div className="lg:col-span-5 relative overflow-hidden rounded-3xl border border-border bg-card p-8 lg:p-10">
             <div className="absolute -top-16 -right-16 h-48 w-48 rounded-full bg-accent/15 blur-3xl" />
             <div className="relative">
-              <p className="text-xs uppercase tracking-[0.3em] text-accent">Langues</p>
+              <p className="text-xs uppercase tracking-[0.3em] text-accent">Languages</p>
               <h3 className="mt-3 font-display text-3xl text-primary lg:text-4xl">
-                Bilingue, à l'aise partout.
+                Bilingual, comfortable anywhere.
               </h3>
 
               <ul className="mt-8 space-y-5">
                 {[
-                  { name: "Français", level: "Langue maternelle", value: 100 },
-                  { name: "Anglais", level: "Professionnel — C1", value: 85 },
-                  { name: "Wolof", level: "Langue maternelle", value: 100 },
+                  { name: "French", level: "Native language", value: 100 },
+                  { name: "English", level: "Professional — C1", value: 85 },
+                  { name: "Wolof", level: "Native language", value: 100 },
                 ].map((l) => (
                   <li key={l.name}>
                     <div className="flex items-baseline justify-between">
@@ -393,9 +392,9 @@ export function Experience() {
             <div className="relative">
               <div className="flex items-end justify-between gap-4">
                 <div>
-                  <p className="text-xs uppercase tracking-[0.3em] text-accent">Loisirs & passions</p>
+                  <p className="text-xs uppercase tracking-[0.3em] text-accent">Hobbies & Passions</p>
                   <h3 className="mt-3 font-display text-3xl text-primary lg:text-4xl">
-                    Au-delà de l'écran.
+                    Beyond the screen.
                   </h3>
                 </div>
                 <span className="hidden sm:block font-display text-6xl italic text-accent/40 leading-none">
@@ -405,12 +404,12 @@ export function Experience() {
 
               <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3">
                 {[
-                  { label: "Code", icon: "</>" },
-                  { label: "Cuisine", icon: "🍲" },
-                  { label: "Recherche", icon: "🔬" },
+                  { label: "Coding", icon: "</>" },
+                  { label: "Cooking", icon: "🍲" },
+                  { label: "Research", icon: "🔬" },
                   { label: "Commerce", icon: "🛍" },
-                  { label: "Création de contenu", icon: "🎬" },
-                  { label: "Lecture", icon: "📖" },
+                  { label: "Content Creation", icon: "🎬" },
+                  { label: "Reading", icon: "📖" },
                 ].map((h) => (
                   <div
                     key={h.label}
@@ -426,7 +425,7 @@ export function Experience() {
               </div>
 
               <p className="mt-8 max-w-xl text-sm text-muted-foreground leading-relaxed">
-                Curieuse de nature, je mets ma créativité au service de prestations variées : contenus autour du dev, recettes et bien plus — toujours avec la même rigueur technique.
+                Curious by nature, I put my creativity to use in various services: tech content creation, recipes, and much more — always with the same technical rigor.
               </p>
             </div>
           </div>

@@ -20,16 +20,16 @@ const projects: Project[] = [
   {
     id: "saytu",
     title: "Saytu",
-    subtitle: "Observatoire numérique des finances publiques",
-    client: "Assemblée Nationale du Sénégal",
+    subtitle: "Digital Observatory of Public Finances",
+    client: "National Assembly of Senegal",
     year: "2025",
-    tag: "Civic Tech · IA",
+    tag: "Civic Tech · AI",
     description:
-      "Plateforme institutionnelle reliant SIGFIP & ASTER pour offrir aux députés une lecture en temps réel du budget de l'État. Modèles d'IA pour la détection d'anomalies, visualisations dynamiques et tableaux de bord ministère par ministère.",
+      "Institutional platform linking SIGFIP & ASTER to offer deputies a real-time view of the state budget. AI models for anomaly detection, dynamic visualizations, and ministry-by-ministry dashboards.",
     metrics: [
-      { label: "Ministères", value: "38" },
-      { label: "Budget suivi", value: "6 842 Mds FCFA" },
-      { label: "Sources liées", value: "SIGFIP · ASTER" },
+      { label: "Ministries", value: "38" },
+      { label: "Tracked Budget", value: "6,842B FCFA" },
+      { label: "Linked Sources", value: "SIGFIP · ASTER" },
     ],
     stack: ["FastAPI", "PostgreSQL", "React", "ML", "D3.js"],
     logo: logoAssemblee,
@@ -38,16 +38,16 @@ const projects: Project[] = [
   {
     id: "emergia",
     title: "Emergia VR",
-    subtitle: "Formation immersive en médecine d'urgence",
-    client: "Govathon — Innovation Citoyenne",
+    subtitle: "Immersive training in emergency medicine",
+    client: "Govathon — Citizen Innovation",
     year: "2025",
-    tag: "VR · Formation",
+    tag: "VR · Training",
     description:
-      "Simulateur en réalité virtuelle pour entraîner les premiers intervenants aux gestes qui sauvent. Conçu en hackathon avec un pitch institutionnel, prototype Unity et parcours pédagogique scénarisé.",
+      "Virtual reality simulator to train first responders in life-saving procedures. Designed during a hackathon with an institutional pitch, Unity prototype, and scripted educational path.",
     metrics: [
-      { label: "Format", value: "VR Unity" },
-      { label: "Cible", value: "Premiers intervenants" },
-      { label: "Étape", value: "Prototype + pitch" },
+      { label: "Format", value: "Unity VR" },
+      { label: "Target", value: "First responders" },
+      { label: "Stage", value: "Prototype + pitch" },
     ],
     stack: ["Unity", "C#", "Blender", "Figma"],
     logo: logoGovathon,
@@ -117,16 +117,15 @@ export function FlagshipProjects() {
         {/* Header */}
         <div className="grid gap-6 lg:grid-cols-12 lg:items-end">
           <div className="lg:col-span-8">
-            <p className="text-xs uppercase tracking-[0.3em] text-accent">Projets phares</p>
+            <p className="text-xs uppercase tracking-[0.3em] text-accent">Flagship Projects</p>
             <h2 className="mt-4 font-display text-4xl text-primary lg:text-6xl text-balance">
-              Deux missions
-              <span className="block italic text-accent">qui ont marqué un tournant.</span>
+              Two missions
+              <span className="block italic text-accent">that marked a turning point.</span>
             </h2>
           </div>
           <div className="lg:col-span-4">
             <p className="text-muted-foreground leading-relaxed">
-              Des produits livrés à des institutions publiques, où la technique
-              rencontre l'impact citoyen — chacun avec sa propre signature visuelle.
+              Products delivered to public institutions, where technology meets civic impact — each with its own visual signature.
             </p>
           </div>
         </div>
@@ -150,7 +149,7 @@ export function FlagshipProjects() {
                 className="relative aspect-square w-full"
                 style={{ transformStyle: "preserve-3d" }}
               >
-                {/* Base platform — chocolate disc with rings */}
+                {/* Base platform */}
                 <div
                   className="absolute inset-x-8 bottom-8 h-12 rounded-[50%]"
                   style={{
@@ -214,7 +213,7 @@ export function FlagshipProjects() {
                     <img
                       key={p.id}
                       src={p.logo}
-                      alt={`Logo ${p.title}`}
+                      alt={`${p.title} Logo`}
                       className={`absolute inset-0 m-auto h-3/4 w-3/4 object-contain p-6 transition-all duration-1000 ${
                         i === active ? "opacity-100 scale-100" : "opacity-0 scale-90"
                       }`}
@@ -238,7 +237,7 @@ export function FlagshipProjects() {
                 >
                   <p className="font-display text-3xl leading-none">{current.year}</p>
                   <p className="text-[9px] uppercase tracking-widest opacity-80 mt-1">
-                    Livré
+                    Delivered
                   </p>
                 </div>
 
