@@ -80,6 +80,7 @@ const projects = [
       "Site de marque pour espace bien-être : univers sensoriel, prise de rendez-vous en ligne et expérience utilisateur apaisante.",
     tags: ["WordPress", "Booking", "Brand"],
     year: "2025",
+    featured: true,
   },
 ];
 
