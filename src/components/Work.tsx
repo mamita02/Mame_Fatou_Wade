@@ -1,8 +1,8 @@
 const projects = [
   {
     title: "Tima Love",
-    url: "https://tima-love.com/",
-    domain: "tima-love.com",
+    url: "https://forestgreen-chinchilla-577529.hostingersite.com/",
+    domain: "forestgreen-chinchilla-577529.hostingersite.com",
     category: "E-commerce",
     description:
       "Boutique en ligne élégante avec catalogue, panier et paiement intégré. Identité raffinée et expérience d'achat fluide.",
@@ -60,6 +60,26 @@ const projects = [
     tags: ["WooCommerce", "Multi-vendor", "Payments"],
     year: "2025",
     featured: true,
+  },
+  {
+    title: "Marwane Group",
+    url: "https://marwane-group-service.com/",
+    domain: "marwane-group-service.com",
+    category: "Corporate",
+    description:
+      "Site vitrine corporate pour groupe multi-services. Présentation claire de l'offre, identité professionnelle et formulaire de contact.",
+    tags: ["WordPress", "SEO", "Corporate"],
+    year: "2025",
+  },
+  {
+    title: "Naya Harmonie",
+    url: "https://nayaharmonie.com/",
+    domain: "nayaharmonie.com",
+    category: "Bien-être",
+    description:
+      "Site de marque pour espace bien-être : univers sensoriel, prise de rendez-vous en ligne et expérience utilisateur apaisante.",
+    tags: ["WordPress", "Booking", "Brand"],
+    year: "2025",
   },
 ];
 
